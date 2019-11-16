@@ -1,54 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>The heart is an umbrella</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Belly Button Biodiversity</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="./static/images/pie.ico">
+  <link rel="stylesheet" href="./static/css/styling.css">
+
 </head>
+
 <body>
-<<!--This is a header and ignored by the browser-->>
 
-<h1>Main Shrey Hai</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center mt-2">
+        <h1 class="text-info font-weight-bold">Belly Button Biodiversity </h1>
+        <p class="text-info font-weight-bold">Use the interactive charts below to explore the dataset</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
 
-<h2>Are you surrre you want a photo </h2>
+        <div class="card bg-light mt-5 text-center">
+          <div class="card-body pt-3 pb-0">
+            <div class="card-title pb-3">
+              <label for="selDataset">Test Subject ID No.:</label>
+              <select class="custom-select mr-sm-2 font-weight-bold" id="selDataset" name="selDataset">
+                <option selected>Choose one ID...</option>
+                <option value=""></option>
+              </select>
+            </div>
+          </div>
+        </div>
 
-<img src = "file:///Users/shreybhatia/Desktop/C97DA5C7-0D63-41DC-9E7A-BB8EF8F19F59-471-0000000BCB6AD75F.jpg" alt = "Your name">
-<hr> </hr> <br>
-<br> 
-<br>
-<br>
-<strong> Hi! I'm Shrey.  
-    Facts about me: I live to travel with my favourite travel partner, my mother. 
-    I dream of traveling at least a 100 countries in this lifetime (currently, the number just touched double digits).
-    And I love coffee, I find my joy spending time in cafes trying unique coffees wherever I go. 
- </strong>  
-<br>
-<br>
-<ol>
-<li>LinkedIn </li>
-<li>Google</li>
-<li>Facebook</li>
-<li>Mashable</li>
-</ol>
-<title>Favorites</title>
+        <div class="card mt-4" id="demo-info">
+          <div class="card-header pb-0 m-0 bg-info">
+            <h5 class="card-title text-white text-center mb-1 font-weight-light">Demographic Info</h5>
+          </div>
+          <div id="sample-metadata" class="card-body">
+            <ul>
+              <!-- Demographic info comes here -->
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div id="bar"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="bubble"></div>
+      </div>
+    </div>
+  </div>
 
-<h1> Movies, Books, Songs </h1>
-</head>
-<body>
-<table border=1>
-<tr>
-    <th>Movie</th>
-    <th>Book</th>
-    <th>Song</th>
-    <th>Travel</th>
-</tr>
-<tr>
-        <td>Dil Chahta Hai</td>
-        <td>Creativity Inc</td>
-        <td>Any AR Rahman</td>
-        <td>Switzerland</td>   
-</tr>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="./static/js/app.js"></script>
+ 
 
 </body>
+
 </html>
